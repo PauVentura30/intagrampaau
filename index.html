@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>Instagram</h1>
+            <div class="profile-info">
+                <img src="images/gordos_0001.webp" alt="Foto de perfil" class="profile-pic">
+                <span>Mi Perfil</span>
+            </div>
+        </div>
+    </header>
+<body>
+        <!-- Feed de publicaciones -->
+    <main class="feed">
+    <!-- Post 1 -->
+    <div class="post">
+        <div class="post-header">
+            <img src="images/gordos_0001.webp" alt="Foto de perfil" class="profile-pic">
+            <span>Gordito69</span>
+        </div>
+        <img src="images/perro-gordo.webp" alt="Publicación 1" class="post-image">
+        <div class="post-actions">
+            <button class="like-button" onclick="incrementLikes(this)">❤️ <span class="like-count">0</span></button>
+            <button class="comment-button" onclick="toggleCommentBox(this)">💬</button>
+            <button class="share-button" onclick="toggleShareOptions(this)">📤</button>
+        </div>
+        <div class="comment-box" style="display: none;">
+            <textarea placeholder="Escribe un comentario..." rows="3"></textarea>
+            <button onclick="addComment(this)">Comentar</button>
+            <div class="comments-list"></div>
+        </div>
+        <div class="share-options" style="display: none;">
+            <p>Compartir en:</p>
+            <button onclick="shareOn('Facebook')">Facebook</button>
+            <button onclick="shareOn('Twitter')">Twitter</button>
+            <button onclick="shareOn('WhatsApp')">WhatsApp</button>
+        </div>
+    </div>
+
+    <!-- Post 2 -->
+    <div class="post">
+        <div class="post-header">
+            <img src="images/1.webp" alt="Foto de perfil" class="profile-pic">
+            <span>Brabucon1716</span>
+        </div>
+        <img src="images/el-perro-se-burlaban-con-una-galleta.webp" alt="Publicación 2" class="post-image">
+        <div class="post-actions">
+            <button class="like-button" onclick="incrementLikes(this)">❤️ <span class="like-count">0</span></button>
+            <button class="comment-button" onclick="toggleCommentBox(this)">💬</button>
+            <button class="share-button" onclick="toggleShareOptions(this)">📤</button>
+        </div>
+        <div class="comment-box" style="display: none;">
+            <textarea placeholder="Escribe un comentario..." rows="3"></textarea>
+            <button onclick="addComment(this)">Comentar</button>
+            <div class="comments-list"></div>
+        </div>
+        <div class="share-options" style="display: none;">
+            <p>Compartir en:</p>
+            <button onclick="shareOn('Facebook')">Facebook</button>
+            <button onclick="shareOn('Twitter')">Twitter</button>
+            <button onclick="shareOn('WhatsApp')">WhatsApp</button>
+        </div>
+    </div>
+
+    <!-- Post 3 -->
+    <div class="post">
+        <div class="post-header">
+            <img src="images/silver-back-gorilla.webp" alt="Foto de perfil" class="profile-pic">
+            <span>kike</span>
+        </div>
+        <img src="images/retrato-de-gorila-blanco-y-negro.webp" alt="Publicación 3" class="post-image">
+        <div class="post-actions">
+            <button class="like-button" onclick="incrementLikes(this)">❤️ <span class="like-count">0</span></button>
+            <button class="comment-button" onclick="toggleCommentBox(this)">💬</button>
+            <button class="share-button" onclick="toggleShareOptions(this)">📤</button>
+        </div>
+        <div class="comment-box" style="display: none;">
+            <textarea placeholder="Escribe un comentario..." rows="3"></textarea>
+            <button onclick="addComment(this)">Comentar</button>
+            <div class="comments-list"></div>
+        </div>
+        <div class="share-options" style="display: none;">
+            <p>Compartir en:</p>
+            <button onclick="shareOn('Facebook')">Facebook</button>
+            <button onclick="shareOn('Twitter')">Twitter</button>
+            <button onclick="shareOn('WhatsApp')">WhatsApp</button>
+        </div>
+    </div>
+</main>
+</body>
+</html>
